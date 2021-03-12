@@ -55,7 +55,7 @@ body {
     min-height: 100vh;
     background-color: rgb(255, 255, 255);
     overflow:hidden;
-    color: #2696E8;
+    color: #fbfeff;
 
 }
 h2.text{
@@ -132,7 +132,7 @@ h2.text{
     left: 0;
     color: transparent;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 1.5s ease;
   }
   
   .main:hover .msg:after{
@@ -147,7 +147,7 @@ h2.text{
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: -90%;
+    top: -40%;
     left: -30%;
     opacity: 0;
     transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
