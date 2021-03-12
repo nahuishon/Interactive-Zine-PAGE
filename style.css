@@ -113,9 +113,9 @@ h2.text{
 
   .main{
     font-family: fantasy;
-    font-size: 7em;
+    font-size: 8em;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Poppins', sans-serif;
