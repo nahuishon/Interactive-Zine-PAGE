@@ -13,20 +13,29 @@
 
    <!-- Link to your stylesheet -->
     <link rel="stylesheet" href="./style.css">
+      <!-- add defer to tell the browser to apply javascript after page has been completely parsed -->
+      <script type="text-javascript" src="script.js" defer></script>
 </head>
  
 <body>
+ 
     <div class="header">
         <div id="bg"></div>
     </div>
+
     <section>
-    <h2>Cabazon Dinosaurs</h2>
     
-    <p>Cabazon Dinosaurs, formerly Claude Bell's Dinosaurs, is a roadside attraction in Cabazon, California,
+    <span class="main">
+        <span class="msg">Cabazon Dinosaurs</span>
+        <span class="image"></span>
+      </span>
+
+    
+    <p> Cabazon Dinosaurs, formerly Claude Bell's Dinosaurs, is a roadside attraction in Cabazon, California,
          featuring two enormous, steel-and-concrete dinosaurs named Dinny the Dinosaur and Mr. Rex. 
         Located just west of Palm Springs, the 150-foot-long (46 m) Brontosaurus and the 65-foot-tall (20 m) 
         Tyrannosaurus rex are visible from the freeway to travelers passing 
-        by on Southern California's Interstate 10.[1] The roadside dinosaurs are best known for their appearance in the film 
+        by on Southern California's Interstate 10. The roadside dinosaurs are best known for their appearance in the film 
         Pee-wee's Big Adventure (1985).</p>
 
        
@@ -47,6 +56,7 @@
             headerBg.style.top = +window.pageYOffset+'px'
             headerBg.style.backgroundPositionY = +window.pageYOffset/2+'px'
         })
+
         </script>
 </body>
 

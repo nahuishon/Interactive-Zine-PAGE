@@ -11,6 +11,7 @@ body {
     background-color: #aec9f5;
   }
 
+
   .header
   {
       position: relative;
@@ -30,6 +31,62 @@ body {
       background-size:cover
   }
 
+  .main{
+    font-family: fantasy;
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .msg{
+    color: transparent;
+    -webkit-text-stroke: 0.01em white;
+    transition: -webkit-text-stroke 0.5s ease, color 0.5s ease;
+  }
+  
+  .main:hover .msg{
+    -webkit-text-stroke: none;
+    color: white;
+  }
+  
+  .msg:after{
+    content: 'Cabazon Dinosaurs';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .main:hover .msg:after{
+    opacity: 1;
+    z-index: 3;
+  }
+  
+  .image{
+    width: 200px;
+    height: 230px;
+    background: url('/assets/dogs.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -90%;
+    left: -30%;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+    pointer-event: none;
+    z-index: 2;
+  }
+  
+  .main:hover .image {
+    opacity: 1;
+  }
+
   section{
       padding: 200px;
       color:#0f8015
@@ -45,9 +102,12 @@ body {
   
     }
  
+ 
+      
 
   section p{
     margin-left: 40px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
   }
+
