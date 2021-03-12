@@ -3,10 +3,14 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 body {
-        height: 100vh;  
+    
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;  
     background-color: #aec9f5;
   }
 
@@ -176,8 +180,9 @@ h2.text{
   }
 
   a{
-    position: relative;
+    position: absolute;
     padding: 10px 30px;
+    margin-left: 140px;
     margin:0 15px;
     color:#21ebff;
     text-decoration: none;
@@ -186,6 +191,7 @@ h2.text{
     font-size: 30px;
     overflow: hidden;
     transition: 0.5s;
+    -webkit-box-reflect:below 1px linear-gradient(transparent) ;
 }
 a:nth-child(1)
 {
