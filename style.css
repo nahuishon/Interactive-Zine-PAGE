@@ -1,10 +1,12 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
 body {
     
     justify-content: center;
     align-items: center;
     min-height:100vh;  
+    font-family: 'space mono';
     background-color: #aec9f5;
   }
 
@@ -174,23 +176,23 @@ h2.text{
     justify-content: center;
   }
 
-   button{
+button{
     position: absolute;
     padding: 10px 30px;
-    margin-left: 40px;
-    margin:0 15px;
-    color:#21ebff;
+    font-size: 30px;
+    margin-left: 840px;
+    color: #ffffff;
+    background-color: #aec9f5;
+    margin-top: 550px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 2px;
     font-size: 30px;
     overflow: hidden;
     transition: 0.5s;
     -webkit-box-reflect:below 1px linear-gradient(transparent) ;
 }
-    a:nth-child(1)
-        {
-    filter:hue-rotate(115deg);}
+  
 
 
  /* target only screens up to 992px */
