@@ -3,22 +3,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>nahee</title>
     <meta name="description" content="Your description goes here">
-    <meta name="author" content="Your Name">
-   
-     <!-- Link to your favicon -->
-    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
 
    <!-- Link to your stylesheet -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
       <!-- add defer to tell the browser to apply javascript after page has been completely parsed -->
       <script type="text-javascript" src="script.js" defer></script>
 </head>
  
 <body>
-    <div class="cursor"></div>
+    <div class="cursor">
     <script type="text/javascript">
         const cursor = document.querySelector(".cursor");
         var timeout;
@@ -45,7 +42,8 @@
           cursor.style.display = "none";
         });
         </script>
-    <div class="header">
+</div>
+<div class="header">
         <div id="bg"></div>
     </div>
 
@@ -66,7 +64,7 @@
         <section id="section1">
             <h2 class="text"> Cabazon-  Dinosaurs </h2>
         </section>
-        
+      </div>
         <script>
             //now, split text in letters
             const text = document.querySelector('.text');
@@ -84,7 +82,7 @@
                 text.style.top = e.pageY + 'py';
             })
         </script>
-        </main>
+      
 
         <section id="section2">
          <p> Cabazon Dinosaurs, formerly Claude Bell's Dinosaurs, is a roadside attraction in Cabazon, California,
@@ -104,9 +102,7 @@
         </p>
         </section>
      
-        
-     
-       
+
         <script type="text/javascript">
             var headerBg = document.getElementById('bg')
             window.addEventListener('scroll',function(){
@@ -115,13 +111,12 @@
             headerBg.style.backgroundPositionY = +window.pageYOffset/2+'px'
         })
        </script>
-   
-</div>
+  </main>
+      <div class="button">
+      <a href="https://core2online.github.io/wikipedia-zine"><button>Class Page</button></a>
+       </div>
 
-<div class="button">
-    <a href="https://core2online.github.io/wikipedia-zine"><button>Class Page</button></a>
-</div>
-
-</body>
+  
+   </body>
 
 </html>
