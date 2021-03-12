@@ -179,10 +179,10 @@ h2.text{
     justify-content: center;
   }
 
-  a{
+  button{
     position: absolute;
     padding: 10px 30px;
-    margin-left: 140px;
+    margin-left: 40px;
     margin:0 15px;
     color:#21ebff;
     text-decoration: none;
