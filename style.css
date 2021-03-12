@@ -28,7 +28,7 @@ h2.text{
     font-size: 2.5em;
     user-select: none;
     pointer-events: none;
-    animation: animate 7.5s linear infinite;
+    animation: animate 5.5s linear infinite;
 }
 @keyframes animate
 {
