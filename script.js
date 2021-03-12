@@ -11,3 +11,4 @@ function cursorFollow(e,mainBox){
 mainBox.addEventListener("mousemove", (e)=>{
   setInterval(cursorFollow(e,mainBox), 1000);
 });
+
