@@ -18,12 +18,13 @@
 </head>
  
 <body>
- 
+       
+
     <div class="header">
         <div id="bg"></div>
     </div>
 
-    <section>
+    <main>
     
     <span class="main">
         <span class="msg">Cabazon Dinosaurs</span>
@@ -34,14 +35,44 @@
       <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
       
-    <p> Cabazon Dinosaurs, formerly Claude Bell's Dinosaurs, is a roadside attraction in Cabazon, California,
+
+      <div class="content">
+
+        <section id="section1">
+            <h2 class="text"> Cabazon -Dinosaurs-</h2>
+        </section>
+        
+        <script>
+            //now, split text in letters
+            const text = document.querySelector('.text');
+            text.innerHTML = text.textContent.replace(/\S/g,
+            "<span>$&</span>");
+
+            const element = document.querySelectorAll('span');
+            for(let i = 0; i<element.length; i++){
+                element[i].style.transform = "rotate("+i*18+"deg)"
+            }
+
+            document.addEventListener("mousemove",function(e)
+            {
+                text.style.left = e.pageX + 'px';
+                text.style.top = e.pageY + 'px';
+            })
+        </script>
+
+        <section id="section2">
+         <p> Cabazon Dinosaurs, formerly Claude Bell's Dinosaurs, is a roadside attraction in Cabazon, California,
          featuring two enormous, steel-and-concrete dinosaurs named Dinny the Dinosaur and Mr. Rex. 
         Located just west of Palm Springs, the 150-foot-long (46 m) Brontosaurus and the 65-foot-tall (20 m) 
         Tyrannosaurus rex are visible from the freeway to travelers passing 
         by on Southern California's Interstate 10. The roadside dinosaurs are best known for their appearance in the film 
         Pee-wee's Big Adventure (1985).</p>
+       
+     
+    </section>
 
 
+        <section id="section3">
     <p>Sculptor and theme park artist Claude Bell began construction of the dinosaurs in 1964 with the goal 
         of attracting more customers to his nearby restaurant, the Wheel Inn (open from 1958 to 2013).
          Dinny and Mr. Rex were completed in 1975 and 1986, respectively. Bell died in 1988 at age 91 and his family
@@ -52,8 +83,19 @@
         </p>
       
         </section>
-       
 
+        <section id="section4">
+            <p>The creation of the Cabazon dinosaurs began in the 1960s by Knott's Berry Farm sculptor and portrait artist Claude K. Bell (1897–1988)
+                 to attract customers to his Wheel Inn Restaurant, which opened in 1958 and closed in 2013.[5] Dinny, the first of
+                  the Cabazon dinosaurs, was started in 1964 and created over a span of eleven years.[6] Bell created Dinny out of spare 
+                  material salvaged from the construction of nearby Interstate 10 at a cost of $300,000.[7] The biomorphic building that was to become
+                   Dinny was first erected as steel framework over which an expanded metal grid was formed in the shape of a dinosaur.</p>
+      
+    </section>
+
+ 
+   
+            
         <script type="text/javascript">
             var headerBg = document.getElementById('bg')
             window.addEventListener('scroll',function(){
